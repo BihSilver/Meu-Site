@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bianca Silveira • Analista de Dados</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero-content">
+
+      <img src="Imagens/Foto1.png" alt="Foto de Bianca Silveira" class="foto-sticker" />
+
+      <div class="hero-text">
+        <span class="hero-tag">Analista de Dados</span>
+        <h1>Bianca Silveira</h1>
+        <p class="subtitulo">
+          Transformando dados em histórias claras, decisões seguras e insights que fazem sentido.
+        </p>
+
+        <div class="hero-bolinhas">
+          <a href="#sobre" class="bolinha bolinha-roxa">Sobre mim</a>
+          <a href="#servicos" class="bolinha bolinha-amarela">Serviços</a>
+          <a href="#projetos" class="bolinha bolinha-verde">Projetos</a>
+          <a href="#contato" class="bolinha">Contato</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<section id="sobre" class="secao secao-sobre">
+  <h2>Por que Bianca?</h2>
+
+  <div class="cards cards-sobre">
+    <article class="card card-icone">
+      <div class="card-icone-img">
+      </div>
+      <div class="card-icone-texto">
+        <h3>Olhar analítico</h3>
+        <p>Eu entendo o problema antes de ir para a ferramenta. Faço os dados trabalharem com contexto!</p>
+      </div>
+    </article>
+
+    <article class="card card-icone">
+      <div class="card-icone-img">
+      </div>
+      <div class="card-icone-texto">
+        <h3>Organização e simplicidade</h3>
+        <p>Planilhas, dashboards e relatórios sempre estruturados com foco em fazer sentido para a sua rotina.</p>
+      </div>
+    </article>
+
+    <article class="card card-icone">
+      <div class="card-icone-img">
+      </div>
+      <div class="card-icone-texto">
+        <h3>Comunicação clara</h3>
+        <p>Tradução de métricas e indicadores para uma linguagem acessível, sem perder a profundidade técnica.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+  <section id="servicos" class="secao secao-servicos">
+    <h2>Serviços</h2>
+
+    <div class="cards">
+      <article class="card">
+        <h3>Dashboards & Relatórios</h3>
+        <p>Criação de painéis visuais para acompanhamento de indicadores, com foco em tomada de decisão.</p>
+      </article>
+
+      <article class="card">
+        <h3>Análises de Dados</h3>
+        <p>Exploração de dados, identificação de padrões, tendências e oportunidades para o negócio.</p>
+      </article>
+
+      <article class="card">
+        <h3>Automação & Organização</h3>
+        <p>Estruturação de planilhas, limpeza de dados e otimização de processos manuais.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="projetos" class="secao secao-portfolio">
+    <h2>Portfólio</h2>
+    <p class="descricao-portfolio">
+      Alguns dos projetos, dashboards e experiências com dados que desenvolvi.
+    </p>
+
+    <div class="links-portfolio">
+      <a href="#" target="_blank" class="btn-link">
+        GitHub
+      </a>
+      <a href="#" target="_blank" class="btn-link">
+        Vercel
+      </a>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="secao secao-contato">
+    <h2>Vamos conversar?</h2>
+    <p class="descricao-contato">
+      Preencha o formulário abaixo com a sua proposta ou dúvida. Vou responder o mais breve possível. 😊
+    </p>
+
+    <!-- Ajuste action/method depois, se usar algum serviço de envio -->
+    <form class="form-contato">
+      <div class="campo">
+        <label for="nome">Seu nome:</label>
+        <input type="text" id="nome" name="nome" required />
+      </div>
+
+      <div class="campo">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <div class="campo">
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" name="telefone" />
+      </div>
+
+      <div class="campo">
+        <label for="motivo">Motivo do contato</label>
+        <input type="text" id="motivo" name="motivo" />
+      </div>
+
+      <div class="campo">
+        <label for="arquivo">Sua proposta (arquivo)</label>
+        <input type="file" id="arquivo" name="arquivo" />
+      </div>
+
+      <div class="campo">
+        <label for="data">Data para contato</label>
+        <input type="date" id="data" name="data" />
+      </div>
+
+      <div class="campo campo-checkbox">
+        <input type="checkbox" id="confirmar" name="confirmar" />
+        <label for="confirmar">Confirmar data do contato?</label>
+      </div>
+
+      <button type="submit" class="btn-enviar">Enviar</button>
+    </form>
+  </section>
+
+  <footer
