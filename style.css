@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
 :root {
-  --cor-fundo: #f7f7fb;
+  --cor-fundo: #06060b;
   --roxo: #6a5ae0;
   --coral: #ff6b6b;
   --amarelo: #ffd93d;
   --verde: #4ecdc4;
-  --texto: #1e1e1e;
+  --texto: #bdbdd1;
   --cinza-medio: #9a9aaf;
   --branco: #ffffff;
 }
@@ -25,135 +25,104 @@ body {
   padding: 0 1.2rem 2.5rem;
 }
 
-.hero {
-  position: relative;
-  margin: 1.5rem -1.2rem 0;
-  padding: 3rem 1.5rem 4rem;
-  background: linear-gradient(90deg, #ffe6fb, #e1f0ff, #f1e5ff);
-  overflow: hidden;
+.topo {
+  height: 95vh; 
+  background-image: url("https://i.pinimg.com/originals/69/a8/17/69a817b35b7328a2cbea46510c323823.gif");
+  background-size: cover;    
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.hero-content {
+.topo-conteiner {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
 }
 
-.foto-sticker {
-  width: 150px;
-  border-radius: 20px;
-  border: 5px solid var(--roxo);
-  padding: 4px;
-  background: var(--branco);
-  box-shadow: 10px 10px 0 var(--coral);
-}
-
-.hero-text {
-  text-align: center;
-  max-width: 520px;
-}
-
-.hero-tag {
+.topo-tag {
   display: inline-block;
-  font-size: 0.8rem;
+  font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: var(--roxo);
-  background: #e4e0ff;
+  color:var(--branco);
+  background: var(--roxo);
   padding: 0.25rem 0.8rem;
   border-radius: 999px;
   margin-bottom: 0.6rem;
 }
 
-.hero h1 {
-  font-size: 2rem;
+.topo h1 {
+  font-size: 10rem;
   margin-bottom: 0.4rem;
+  color: #e4e0ff;
+ font-family:Titillium+Web;
 }
 
 .subtitulo {
-  font-size: 0.95rem;
-  color: var(--cinza-medio);
+  font-size: 2rem;
+  color: var(--branco);
   margin-bottom: 1.4rem;
 }
 
-.hero-bolinhas {
+.topo-sobre {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.6rem;
+  margin-top: 2.5rem;
 }
 
-.bolinha {
+.bola {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   min-width: 110px;
   padding: 0.6rem 1rem;
   border-radius: 999px;
-  font-size: 0.9rem;
+  font-size: 2.5rem;
   font-weight: 600;
   text-decoration: none;
-  color: var(--texto);
+  color: var(--cinza-medio);
   background: var(--branco);
   border: 2px solid transparent;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-.bolinha-roxa {
+.bola-roxo {
   background: var(--roxo);
   color: var(--branco);
 }
 
-.bolinha-amarela {
+.bola-amarela {
   background: var(--amarelo);
+  color: var(--branco);
 }
 
-.bolinha-verde {
+.bola-verde {
   background: var(--verde);
-}
-
-.sticker {
-  position: absolute;
-  width: 80px;             
-  opacity: 0.9;
-  pointer-events: none;
-}
-
-.sticker-lampada {
-  top: 20px;
-  left: 20px;
-}
-
-.sticker-lupa {
-  top: 50%;
-  right: 24px;
-  transform: translateY(-50%);
-}
-
-.sticker-pc {
-  top: 30px;
-  right: 90px;
-}
-
-.sticker-smile {
-  bottom: 25px;
-  left: 30px;
-}
-
-.secao {
-  padding: 2.5rem 0 0;
-}
-
-.secao h2 {
-  font-size: 1.4rem;
-  margin-bottom: 1.2rem;
+    color: var(--branco);
 }
 
 .cards {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+.titulo-imagem{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 1rem;
+}
+
+.titulo-imagem h2 {
+  margin: 0;
+  font-size: 1.2rem;
 }
 
 .card {
