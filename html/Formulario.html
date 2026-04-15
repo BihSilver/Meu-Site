@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contato</title>
+    <link rel="stylesheet" href="../Css/style.css">
+</head>
+<body>
+    <button id="mudar-tema" class="mudar-tema">🌙</button>
+    <a href="index.html" id="voltar" class="mudar-tema">⬅️</a>
+    <section id="contato" class="secao-contato">
+    <h2>Vamos conversar?</h2>
+    <p class="descricao-contato">
+      Preencha o formulário abaixo com a sua proposta ou dúvida. Vou responder o mais breve possível. 😊
+    </p>
+
+   <form id="form-contato" class="form-contato">
+      <div class="campo">
+        <label for="nome">Seu nome:</label>
+        <input type="text" id="nome" name="nome" novalidate/>
+        <span class="erro"></span>
+      </div>
+
+      <div class="campo">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" novalidate/>
+        <span class="erro"></span>
+      </div>
+
+      <div class="campo">
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" name="telefone" novalidate/>
+        <span class="erro"></span>
+      </div>
+
+      <div class="campo">
+        <label for="motivo">Motivo do contato</label>
+        <input type="text" id="motivo" name="motivo" novalidate/>
+            <span class="erro"></span>
+      </div>
+
+<div class="campo" data-campo-proposta>
+  <label>Sua proposta (foto)</label>
+  <button type="button" data-video-botao>
+    Abrir câmera 📸
+  </button>
+  <div data-camera style="display: none;">
+    <video data-video width="250" autoplay></video>
+    <button type="button" data-tirar-foto>Tirar foto</button>
+    <canvas data-video-canvas width="250" height="180"></canvas>
+  </div>
+  <p data-mensagem style="display: none;">
+    ✅ Proposta capturada com sucesso!
+  </p>
+  <span class="erro"></span>
+</div>
+      </div>
+
+      <div class="campo">
+        <label for="data">Data para contato</label>
+        <input type="date" id="data" name="data" novalidate/>
+                <span class="erro"></span>
+      </div>
+
+      <div class="campo campo-checkbox">
+        <input type="checkbox" id="confirmar" name="confirmar" novalidate/>
+        <label for="confirmar">Confirmar data do contato?</label>
+                <span class="erro"></span>
+      </div>
+      <p id="mensagem-erro"></p>
+      <button type="submit" class="btn-enviar">Enviar</button>
+    </form>
+  </section>  
+</body>
+
+    <script src="/Js/script.js"></script>
+
+</html>

@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bianca Silveira • Analista de Dados</title>
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../Css/style.css">
 </head>
+
 <body>
 
   <header class="topo">
@@ -19,10 +20,11 @@
         </p>
 
         <div class="topo-sobre">
+        <button id="mudar-tema" class="mudar-tema">🌙</button>
           <a href="#sobre" class="bola bola-roxo">Sobre mim</a>
           <a href="#servicos" class="bola bola-amarela">Serviços</a>
           <a href="#projetos" class="bola bola-verde">Projetos</a>
-          <a href="#contato" class="bola">Contato</a>
+          <a href="Formulario.html" class="bola">Contato</a>
         </div>
       </div>
     </div>
@@ -94,51 +96,8 @@
     </div>
   </section>
 
-  <section id="contato" class="secao-contato">
-    <h2>Vamos conversar?</h2>
-    <p class="descricao-contato">
-      Preencha o formulário abaixo com a sua proposta ou dúvida. Vou responder o mais breve possível. 😊
-    </p>
-
-    <form class="form-contato">
-      <div class="campo">
-        <label for="nome">Seu nome:</label>
-        <input type="text" id="nome" name="nome" required />
-      </div>
-
-      <div class="campo">
-        <label for="email">E-mail</label>
-        <input type="email" id="email" name="email" required />
-      </div>
-
-      <div class="campo">
-        <label for="telefone">Telefone</label>
-        <input type="tel" id="telefone" name="telefone" />
-      </div>
-
-      <div class="campo">
-        <label for="motivo">Motivo do contato</label>
-        <input type="text" id="motivo" name="motivo" />
-      </div>
-
-      <div class="campo">
-        <label for="arquivo">Sua proposta (arquivo)</label>
-        <input type="file" id="arquivo" name="arquivo" />
-      </div>
-
-      <div class="campo">
-        <label for="data">Data para contato</label>
-        <input type="date" id="data" name="data" />
-      </div>
-
-      <div class="campo campo-checkbox">
-        <input type="checkbox" id="confirmar" name="confirmar" />
-        <label for="confirmar">Confirmar data do contato?</label>
-      </div>
-
-      <button type="submit" class="btn-enviar">Enviar</button>
-    </form>
-  </section>
 </main>
+    <script src="/Js/script.js"></script>
 
 </body>
+</html>

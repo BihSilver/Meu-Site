@@ -17,6 +17,58 @@
   padding: 0;
 }
 
+
+.mudar-tema {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.292);
+  border: 1px solid rgba(255, 255, 255, 0.723);
+  font-size: 50px;  
+  margin-right: 20px;
+  text-decoration: none;
+  cursor: pointer;  
+  z-index: 9999;    
+  position: relative;
+  pointer-events: auto; 
+}
+
+
+.erro {
+  color: #ff6b6b;
+  font-size: 1.2rem;
+  margin-top: 5px;
+  display: block;
+}
+
+[data-camera] {
+  margin-top: 10px;
+}
+
+video, canvas {
+  border-radius: 8px;
+  margin-top: 8px;
+}
+
+[data-video-botao],
+[data-tirar-foto] {
+  margin-top: 8px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: none;
+  background: var(--roxo);
+  color: white;
+}
+
+
+.tema-escuro {
+  --cor-fundo: #0f172a;
+  --texto: #e5e7eb;
+  --branco: #1e293b;
+  --cinza-medio: #9ca3af;
+}
+
+
 body {
   font-family: "Titillium Web", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   background: var(--cor-fundo);
@@ -27,13 +79,14 @@ body {
 
 .topo {
   height: 95vh; 
-  background-image: url("https://i.pinimg.com/originals/69/a8/17/69a817b35b7328a2cbea46510c323823.gif");
+  background-image: url("https://i.pinimg.com/originals/bb/f3/99/bbf399ef3eb7649b9cc2b69656b574af.gif");
   background-size: cover;    
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 10px;
 }
 
 .topo-conteiner {
@@ -55,7 +108,7 @@ body {
 }
 
 .topo h1 {
-  font-size: 10rem;
+  font-size: 8rem;
   margin-bottom: 0.4rem;
   color: #e4e0ff;
  font-family:Titillium+Web;
@@ -72,7 +125,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.6rem;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
 }
 
 .bola {
@@ -82,7 +135,7 @@ body {
   min-width: 110px;
   padding: 0.6rem 1rem;
   border-radius: 999px;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: 600;
   text-decoration: none;
   color: var(--cinza-medio);
@@ -225,7 +278,7 @@ h2 {
   }
 
   .topo {
-    margin: 1.5rem -4rem 0;
+    margin: 1.5rem -4rem 60px;
     padding: 4rem 4rem 5rem;
   }
 
